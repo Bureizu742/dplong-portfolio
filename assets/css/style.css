@@ -34,7 +34,7 @@ body {
 
 .about {
     display: flex;
-    background: rgb(80, 235, 155);
+    background: lightyellow;
     border-bottom: 2px solid black;
 }
 
@@ -45,10 +45,12 @@ body {
     padding-right: 1rem;
     width: 20%;
     text-align: right;
-    background-color: lightcyan;
+    background-color: steelblue;
 }
 
 p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
     color: black;
 }
 
@@ -71,7 +73,7 @@ p {
 
 .my-projects {
     display: flex;
-    background: lightcyan;
+    background: steelblue;
     border-bottom: 2px solid black;
 }
 
@@ -91,7 +93,7 @@ p {
     flex-grow: 1;
     margin: auto;
     padding: 1rem;
-    background-color: rgb(80, 235, 155);
+    background-color: lightyellow;
 }
 
 .project-container a {
@@ -132,9 +134,19 @@ p {
     border-radius: 1rem;
 }
 
+article a {
+    display: flex;
+    justify-content: left;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-size: 30px;
+    padding: 8px;
+}
+
 .contact {
     display: flex;
-    background: rgb(80, 235, 155);
+    background: lightyellow;
 }
 
 .contact h2 {
@@ -143,7 +155,7 @@ p {
     padding: 1rem;
     width: 20%;
     text-align: right;
-    background-color: lightcyan;
+    background-color: steelblue;
 }
 
 .contact-container {
@@ -177,23 +189,8 @@ p {
     background-position: center;
 }
 
-/* @media screen and (max-width: 768px) {
-    Use flex-direction to stack the navbar, sidebar, and body
-    main,
-    nav {
+@media screen and (max-width: 768px) {
+    main, nav, article, header, h2 {
       flex-direction: column;
     }
-    Make the sidebar stack below the body
-    aside {
-      order: 2;
-    }
-    Change the header background
-    header {
-      background: #772014;
-    }
-    Change the navbar and footer background
-    nav,
-    footer {
-      background-color: #bb8588;
-    }
-  } */
+  }
