@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <h1>Patrick Long</h1>
+        <h1>Lillian Long</h1>
         <nav>
             <a href="#about-me">About Me</a>
             <a href="#projects">Projects</a>
@@ -20,40 +20,49 @@
         </nav>
     </header>
 
-    <main>
-        <article>
-            <h2 id="about-me">About Me</h2>
-            <img src="./assets/images/Horiseon-Search-Engine-Optimization.png" alt="me!">
-            <p>My name is David, but please call me Patrick. I'm an aspiring software developer! Below are some projects
-                I've done (or placeholders until they get done!). </p>
-        </article>
+    <article class="about">
+        <h2 id="about-me">About Me</h2>
+        <section class="aboutme-container">
+            <div class="profile-card" id="profile"></div>
+        <p>My name is David, but please call me Patrick. I'm an aspiring software developer! Below are some projects
+            I've done (or placeholders until they get done!). </p>
+        </section>
+    </article>
 
-        <article>
-            <h2 id="projects">Projects</h2>
-        </article>
+    <article id="projects" class="my-projects">
+        <h2>My Projects</h2>
+        <section class="project-container">
+            <div class="featured-project">
+                <a href="https://bureizu742.github.io/seo-refactor/" target="_blank">
+                    <div class="card featured" id="major-project">
+                        <p class="title">Horiseon SEO</p>
+                    </div>
+                </a>
+            </div>
 
-        <article>
-            <h3>Horiseon - Search Engine Optimization Project</h3>
-            <a href="https://bureizu742.github.io/seo-refactor/" target="_blank"><img class="major-project" src="./assets/images/Horiseon-Search-Engine-Optimization.png" alt="Project 2"></a>
-        </article>
+            <div class="projects">
+                <a href="https://www.google.com" target="_blank">
+                    <div class="card" id="minor-project-1">
+                        <p class="title">Placeholder 1</p>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com" target="_blank">
+                    <div class="card" id="minor-project-2">
+                        <p class="title">Placeholder 2</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </article>
 
-        <article>
-            <h3>Placeholder 2 - Google</h3>
-            <a href="https://www.google.com" target="_blank"><img class="minor-project" src="./assets/images/Google HQ.jpg" alt="Project 2"></a>
-        </article>
-
-        <article>
-            <h3>Placeholder 3 - Youtube</h3>
-            <a href="https://www.youtube.com" target="_blank"><img class="minor-project" src="./assets/images/Youtube HQ.jpg" alt="Project 2"></a>
-        </article>
-
-        <article>
-            <h2 id="contact-me">Contact Me</h2>
-            <a href="#">email</a>
-            <a href="#">linkedin</a>
-            <a href="#">github</a>
-        </article>
-    </main>
+    <article class="contact">
+        <h2 id="contact-me">Contact Me</h2>
+        <section class="contact-container">
+        <a href="#">Email</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Github</a>
+        </section>
+    </article>
 </body>
 
 </html>
